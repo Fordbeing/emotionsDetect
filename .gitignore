@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model checkpoints - ignore training checkpoints but keep final LoRA weights
+models/qwen_base/
+models/qwen_lora/checkpoint-*/
+models/qwen_lora/optimizer.pt
+models/qwen_lora/scheduler.pt
+models/qwen_lora/training_args.bin
+*.pt
+*.bin
+*.ckpt
